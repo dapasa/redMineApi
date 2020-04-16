@@ -1,0 +1,35 @@
+{
+    "name": "dapasa/redmine-api",
+    "description": "Redmine package for Api consumption in Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Passarelli",
+            "email": "dpassarelli@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "dapasa\\redMineApi\\": "src"
+        }
+    },
+    "require": {
+        "php": "^5.4 || ^7.2",
+        "ext-curl": "*",
+        "ext-simplexml": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "phpunit/phpunit": "^4.8.36 || ^5.4.8 || ^6.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "dapasa\\redMineApi\\RedmineServiceProvider"
+            ]
+        }
+    }
+}
